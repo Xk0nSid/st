@@ -1,8 +1,8 @@
-# Luke's build of st - the simple (suckless) terminal
+# Xk0nSid's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features:
 
-+ Compatibility with `Xresources` and `pywal` for dynamic colors.
++ Compatibility with `Xresources` (by default not active) and `pywal` for dynamic colors.
 + Default [gruvbox](https://github.com/morhetz/gruvbox) colors otherwise.
 + Transparency/alpha, which is also adjustable from `~/.Xresources`.
 + Default font is system "mono" at 16pt, meaning the font will match your system font.
@@ -43,6 +43,9 @@ On OpenBSD, be sure to edit `config.mk` first and remove `-lrt` from the
 
 ## How to configure dynamically with Xresources
 
+> To enable `Xresources` goto `x.c` and uncomment line `config_init()` from last
+> of the file
+
 For many key variables, this build of `st` will look for X settings set in
 either `~/.Xdefaults` or `~/.Xresources`. You must run `xrdb` on one of these
 files to load the settings.
@@ -73,5 +76,6 @@ transparency.
 
 ## Contact
 
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
+> Note: This is a fork of [Luke Smith's st](https://github.com/LukeSmithxyz/st).
+
+- Siddharth Yadav <siddharth_yadav@outlook.com>
